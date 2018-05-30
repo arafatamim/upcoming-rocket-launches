@@ -1,5 +1,5 @@
 # Upcoming rocket launches
-Rocket launch tracker written in Python (powered by launchlibrary.net)
+Rocket launch tracker written in Python (powered by [Launch Library](launchlibrary.net)).
 
 ## License
 MIT Licensed.

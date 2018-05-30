@@ -2,9 +2,10 @@
 
 import requests, datetime, time
 
-launches_to_fetch = 5   # Max is 5
+launches_to_fetch = 5
+status = 1  # 1 Green, 2 Red, 3 Success, 4 Failed
 try:
-    target_data = requests.get("https://launchlibrary.net/1.4/launch/next/{0}?status=1".format(launches_to_fetch)).json()
+    target_data = requests.get("https://launchlibrary.net/1.4/launch/next/{0}?status={1}".format(launches_to_fetch, status)).json()
 except requests.exceptions.ConnectionError:
     print("You're offline")
     exit()
